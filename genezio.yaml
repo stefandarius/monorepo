@@ -1,0 +1,12 @@
+name: monorepo-project
+region: us-east-1
+cloudProvider: genezio
+frontend:
+    path: client
+    subdomain: darkturquoise-its-impala
+scripts:
+    preBackendDeploy: npm i
+workspace:
+    backend: server
+    frontend: client
+language: ts
